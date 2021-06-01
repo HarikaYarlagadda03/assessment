@@ -1,0 +1,86 @@
+//*pagination*//
+.container-fluid {
+    margin: 3rem;
+    margin-left: 4rem;
+    display: inline-flex;
+    justify-content: center;
+
+    .left-icon {
+        font-size: 1.9rem;
+        padding-top: 0.5rem;
+    }
+
+    .right-icon {
+        @extend .left-icon;
+        padding-left: 5rem;
+    }
+
+    p, .records-per-page{
+        padding-top: 0.8rem;
+        padding-left: 5rem;
+    }
+
+    .gotopage{
+        padding-left: 5rem;
+    }
+.gotopage-textbox{
+    width: 2.5rem;
+    margin-top: 0.5rem;
+    height: 2.1rem;
+}
+    select {
+        margin-top: 0.5rem;
+        height: 2.2rem;
+        width: 2.7rem;
+        margin-left: 0.3rem ;
+    }
+}
+@media screen and  (min-device-width: 562px) and (max-device-width: 800px) {
+    .container-fluid{
+        margin-left: 1rem;
+        justify-content: center;
+    p{
+        padding-left: 2rem;
+    }
+    .records-per-page{
+        padding-left: 1rem;
+    }
+    .gotopage{
+        padding-left: 1rem;
+    }
+    .right-icon {
+        padding-left: 2rem;
+    }
+}
+}
+
+@media screen and (max-width:561px) {
+    .container-fluid{
+        display: block;
+        justify-content: center;
+        margin-bottom: 7rem;
+        p{
+            font-size: 1rem;
+            padding-left: 30%;
+
+        }
+        .records-per-page{
+            padding-left: 30%;
+        }
+        .gotopage{
+            padding-left: 30%;
+            display: block;
+            padding-top: 1rem;
+        }
+        .right-icon {
+            float: right; 
+            padding-right: 2rem;       
+        }
+        .left-icon {
+            padding-left: 2rem;
+            font-size: 1.9rem;
+            padding-top: 0.5rem;
+        }
+    
+    }
+}
